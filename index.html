@@ -2,41 +2,57 @@
 <html>
   <head>
     <title>Myles Burke</title>
-
     <style>
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-    .projInfo {
-      background-color:
-      background-color: #f0f0f0;
-      padding: 15px;
-      border-radius: 8px;
-    }
+      header, section, footer {
+        margin-bottom: 40px;
+      }
+
+      .project-card {
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px; 
+      }
+
+      .project-card h3 {
+        margin-top: 0;
+      }
     </style>
   </head>
-
-  
   <body>
-    <h1>Myles Burke</h1>
-    <p>Computer Science student</p>
-    <h2>Bioargpahy </h2>
-    <p>Intrested in Automation, software engineering, and creating projects.</p>
+    <header>
+      <h1>Myles Burke</h1>
+      <p>Computer Science student</p>
+      <h2>Biography</h2>
+      <p>Interested in Automation, Software Engineering, and creating projects.</p>
+    </header>
 
+    <section class="projects">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Description of project 1. Tech used, links, screenshots, etc.</p>
+      </div>
 
-    <div class="projects">
-      <div class="projInfo">
-        <h3>First Project</h3>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Description of project 2. Tech used, links, screenshots, etc.</p>
       </div>
-      <div class="projInfo"> 
-        <h3>second Project</h3>
+
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Description of project 3. Tech used, links, screenshots, etc.</p>
       </div>
-      <div class="projInfo">
-        <h3>third project</h3>
-      </div>
-    </div>
+    </section>
+
+    <footer>
+      <p>Contact: myles@example.com | <a href="https://github.com/myles-burke">GitHub</a></p>
+    </footer>
   </body>
 </html>
