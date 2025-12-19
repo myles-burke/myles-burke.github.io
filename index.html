@@ -55,19 +55,22 @@
               background-color: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
           
         <div style="position: relative; z-index: 2; padding: 20px;">
-          <h3>Food Search</h3>
+          <h3>Food Search</h3> 
         </div>
       </div>
         <p><b>Description:</b></p>
-        <p>Allows users to select a cuisine or randomly generate a food type. 
+          <p>Allows users to select a cuisine or randomly generate a food type. 
           The application then returns a list of nearby restaurants matching the selected 
-          food. Users can double-click any result to open it directly in Google Maps. How 
-          it works: A Java Swing GUI displays a dropdown menu, search bar, and results box. 
+          food. Users can double-click any result to open it directly in Google Maps.</p>
+        <p>How it works:</p> 
+          <p>A Java Swing GUI displays a dropdown menu, search bar, and results box. 
           User interactions (dropdown selection or search bar) trigger background tasks 
           using SwingWorker, which automates Chrome via Selenium WebDriver to search Google 
           Maps and scrape restaurant data. Results are then displayed in the GUI, with 
           double-click functionality opening the restaurant location in the default web 
-          browser. Technologies / Tools: Java (Swing GUI, multithreading) Selenium WebDriver
+          browser. </p>
+        <p>Technologies / Tools:</p>
+          <p>Java (Swing GUI, multithreading) Selenium WebDriver
           (ChromeDriver and ChromeOptions) WebDriverManager (automates ChromeDriver setup) 
           Google Maps (data source)</p>
 
